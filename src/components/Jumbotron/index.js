@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import "./style.css";
 
@@ -8,11 +10,13 @@ export default class Hero extends Component {
       return (
         <Jumbotron fluid className="mb-0" id="HeroBG">
             <Container>
-                <h1>Fluid jumbotron</h1>
-                <p>
-                This is a modified jumbotron that occupies the entire horizontal space of
-                its parent.
-                </p>
+                <Row>
+                    <Col md={3}></Col>
+                    <Col md={6}>
+                        <p className="text-center mt-0" id="my-name">Hello, I'm Giovanni Noisy.<br />I'm a Graphic Designer + Web Developer.</p>
+                    </Col>
+                    <Col md={3}></Col>
+                </Row>
             </Container>
         </Jumbotron>
       );
