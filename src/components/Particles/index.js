@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
+import "./style.css";
 
 export default class Particle extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class Particle extends Component {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "#0f1d25",
             },
           },
           fpsLimit: 60,
@@ -37,7 +38,7 @@ export default class Particle extends Component {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
+                distance: 50,
                 duration: 0.4,
               },
             },
@@ -61,15 +62,15 @@ export default class Particle extends Component {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 6,
+              speed: 2,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 1200,
               },
-              value: 80,
+              value: 100,
             },
             opacity: {
               value: 0.5,
@@ -79,7 +80,7 @@ export default class Particle extends Component {
             },
             size: {
               random: true,
-              value: 5,
+              value: 2,
             },
           },
           detectRetina: true,
